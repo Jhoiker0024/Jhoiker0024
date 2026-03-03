@@ -10,7 +10,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://i.postimg.cc/VNHGhCyG/Chat-GPT-Image-2-mar-2026-10-36-51-p-m.png");
+        background-image: url("https://i.postimg.cc/52mKJrvV/Chat-GPT-Image-2-mar-2026-11-43-11-p-m.png");
         background-size: 90%;
         background-repeat: no-repeat;
         background-position: center 10px;
@@ -85,7 +85,7 @@ def reproducir_sonido(url):
     st.markdown(f'<audio src="{url}" autoplay style="display:none"></audio>', unsafe_allow_html=True)
 
 # --- 4. INTERFAZ VISUAL ---
-st.title("")
+
 st.title("📡Aprendiendo de Telecomunicaciones📡")
 st.divider()
 
