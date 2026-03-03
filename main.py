@@ -10,7 +10,7 @@ st.markdown(
     <style>
     .stApp {
         background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("https://observatorio.tec.mx/wp-content/uploads/2022/11/Virtual-Laboratories-and-Their-Contribution-to-the-Future-of-Education-1024x331.jpg");
+        url("https://drive.google.com/uc?export=view&id=1OKOn2U69T_U4eVVUgK_dXbgyt8EsLAl3.jpg");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
