@@ -97,10 +97,10 @@ if 'indice' not in st.session_state:
     st.session_state.puntos = 0
     st.session_state.juego_terminado = False
 
-# # --- 3. FUNCIONES DE AUDIO ---
-# # Nota para el alumno: Streamlit puede reproducir audio desde una URL
-# def reproducir_sonido(url):
-#     st.markdown(f'<audio src="{url}" autoplay style="display:none"></audio>', unsafe_allow_html=True)
+# --- 3. FUNCIONES DE AUDIO ---
+# Nota para el alumno: Streamlit puede reproducir audio desde una URL
+def reproducir_sonido(url):
+    st.markdown(f'<audio src="{url}" autoplay style="display:none"></audio>', unsafe_allow_html=True)
 
 # --- 4. INTERFAZ VISUAL ---
 st.markdown(
