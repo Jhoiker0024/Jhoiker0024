@@ -1,3 +1,6 @@
+if st.button("Reset completo"):
+    st.session_state.clear()
+    st.rerun()
 import streamlit as st
 import random
 import time
