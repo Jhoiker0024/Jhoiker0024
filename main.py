@@ -36,7 +36,7 @@ if 'pool_preguntas' not in st.session_state:
      "o": ["Router", "Amplificador", "Switch", "Modem"],
      "c": "Amplificador"},
 
-    {"p": "¿Qué medio de transmisión usa luz para enviar datos?",
+    {"p": "¿Qué medio de transmisión usa luz visible para enviar datos?",
      "o": ["Cable coaxial", "Par trenzado", "Fibra óptica", "Microondas"],
      "c": "Fibra óptica"},
 
@@ -53,7 +53,7 @@ if 'pool_preguntas' not in st.session_state:
      "c": "Internet Service Provider"},
 
     {"p": "¿Qué fenómeno puede afectar la calidad de una señal inalámbrica?",
-     "o": ["Interferencia", "Oxidación", "Gravedad", "Reflexión térmica"],
+     "o": ["La Distancia", "El viento", "Gravedad", "Interferencia"],
      "c": "Interferencia"},
 
     {"p": "¿Qué red cubre un área personal como Bluetooth?",
@@ -65,8 +65,8 @@ if 'pool_preguntas' not in st.session_state:
      "c": "HTTP"},
 
     {"p": "¿Qué magnitud mide la potencia de una señal?",
-     "o": ["Decibelios", "Segundos", "Bits", "Metros"],
-     "c": "Decibelios"}
+     "o": ["dBm", "Segundos", "Bits", "Metros"],
+     "c": "dBm"}
 ]
     # Mezclamos el pool para que no siempre salgan igual
     random.shuffle(st.session_state.pool_preguntas)
