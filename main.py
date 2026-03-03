@@ -19,7 +19,7 @@ st.markdown(
     }
 
     h1, h2, h3, h4, h5, h6, p, div {
-        font-family: "Times New Roman", Times, serif; 
+        font-family: "Courier New", Courier, monospace !important; 
     }
     </style>
     """,
