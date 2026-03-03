@@ -10,11 +10,9 @@ st.markdown(
     <style>
     .stApp {
         background-image: url("https://i.postimg.cc/52mKJrvV/Chat-GPT-Image-2-mar-2026-11-43-11-p-m.png");
-        # background-size: 90%;
-        # background-repeat: no-repeat;
-        # background-position: center 10px; 
         background-color: #0f172a;
         font-family: "Times New Roman", Times, serif;
+        
             /* FORZAR TODO EL TEXTO A BLANCO */
     h1, h2, h3, h4, h5, h6,
     p, div, span, label {
@@ -99,10 +97,10 @@ if 'indice' not in st.session_state:
     st.session_state.puntos = 0
     st.session_state.juego_terminado = False
 
-# --- 3. FUNCIONES DE AUDIO ---
-# Nota para el alumno: Streamlit puede reproducir audio desde una URL
-def reproducir_sonido(url):
-    st.markdown(f'<audio src="{url}" autoplay style="display:none"></audio>', unsafe_allow_html=True)
+# # --- 3. FUNCIONES DE AUDIO ---
+# # Nota para el alumno: Streamlit puede reproducir audio desde una URL
+# def reproducir_sonido(url):
+#     st.markdown(f'<audio src="{url}" autoplay style="display:none"></audio>', unsafe_allow_html=True)
 
 # --- 4. INTERFAZ VISUAL ---
 st.markdown(
