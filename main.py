@@ -95,6 +95,7 @@ st.markdown(
     </h1>
     """,
     unsafe_allow_html=True
+)
 st.divider()
 
 if not st.session_state.juego_terminado:
