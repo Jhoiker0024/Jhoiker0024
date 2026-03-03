@@ -15,10 +15,31 @@ st.markdown(
         # background-position: center 10px; 
         background-color: #0f172a;
         font-family: "Times New Roman", Times, serif;
+            /* FORZAR TODO EL TEXTO A BLANCO */
+    h1, h2, h3, h4, h5, h6,
+    p, div, span, label {
+        color: white !important;
+        font-family: "Courier New", Courier, monospace !important;
     }
 
-    h1, h2, h3, h4, h5, h6, p, div {
-        font-family: "Courier New", Courier, monospace !important; 
+    /* FORZAR TODO EL TEXTO A BLANCO */
+    h1, h2, h3, h4, h5, h6,
+    p, div, span, label {
+        color: white !important;
+        font-family: "Courier New", Courier, monospace !important;
+    }
+
+    /* BOTONES */
+    .stButton>button {
+        background-color: #1e293b;
+        color: white !important;
+        border: 1px solid #00c3ff;
+        font-weight: bold;
+    }
+
+    .stButton>button:hover {
+        background-color: #00c3ff;
+        color: black !important;
     }
     </style>
     """,
