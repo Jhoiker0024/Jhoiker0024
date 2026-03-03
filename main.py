@@ -13,7 +13,7 @@ st.markdown(
         background-image: url("https://i.postimg.cc/VNHGhCyG/Chat-GPT-Image-2-mar-2026-10-36-51-p-m.png");
         background-size: 90%;
         background-repeat: no-repeat;
-        background-position: center 60px;
+        background-position: center 40px;
         background-color: #0f172a;
         font-family: "Courier New", Courier, monospace;
     }
