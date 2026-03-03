@@ -9,7 +9,8 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d");
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -17,6 +18,7 @@ st.markdown(
     </style>
     """,
     unsafe_allow_html=True
+)
 )
 # --- 1. BASE DE DATOS DE PRUEBA (El "Pool" de 10 preguntas) ---
 # Instrucción para el alumno: "Aquí es donde añades tus preguntas de TDA"
