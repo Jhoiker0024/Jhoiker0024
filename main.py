@@ -3,32 +3,23 @@ import random
 import time
 
 # --- CONFIGURACIÓN DE LA PÁGINA ---
-st.set_page_config(page_title="Aprendiendo de Telecomunicaciones", page_icon="📡")
+st.set_page_config(page_title="Aprendiendo Telecomunicaciones", page_icon="📡")
+# --- COLOCA IMAGEN DE FONDO ---
 # --- COLOCA IMAGEN DE FONDO ---
 st.markdown(
     """
     <style>
     .stApp {
-        background-color: #0f172a;
-    }
-
-    .stApp::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
         background-image: url("https://i.postimg.cc/VNHGhCyG/Chat-GPT-Image-2-mar-2026-10-36-51-p-m.png");
-        background-size: contain;
+        background-size: 90%;
         background-repeat: no-repeat;
-        background-position: center;
-        z-index: 0;
+        background-position: center 60px;
+        background-color: #0f172a;
+        font-family: "Courier New", Courier, monospace;
     }
 
-    .main {
-        position: relative;
-        z-index: 1;
+    h1, h2, h3, h4, h5, h6, p, div {
+        font-family: "Courier New", Courier, monospace !important;
     }
     </style>
     """,
