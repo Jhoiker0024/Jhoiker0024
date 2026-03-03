@@ -161,7 +161,7 @@ if not st.session_state.juego_terminado:
             time.sleep(1)
 
         # Avanzamos a la siguiente pregunta
-       if st.session_state.indice < TOTAL_PREGUNTAS - 1: # Jugamos todas  las preguntas por ronda
+        if st.session_state.indice < TOTAL_PREGUNTAS - 1: # Jugamos todas  las preguntas por ronda
             st.session_state.indice += 1
             st.rerun()
         else:
