@@ -3,23 +3,53 @@ import random
 import time
 
 # --- CONFIGURACIÓN DE LA PÁGINA ---
-st.set_page_config(page_title="Trivia Master IUT", page_icon="💰")
+st.set_page_config(page_title="Aprendiendo de Telecomunicaciones", page_icon="📡")
 
 # --- 1. BASE DE DATOS DE PRUEBA (El "Pool" de 10 preguntas) ---
 # Instrucción para el alumno: "Aquí es donde añades tus preguntas de TDA"
 if 'pool_preguntas' not in st.session_state:
-    st.session_state.pool_preguntas = [
-        {"p": "¿Cuál es la capital de Venezuela?", "o": ["Maracaibo", "Caracas", "Valencia", "Coro"], "c": "Caracas"},
-        {"p": "¿Qué planeta es conocido como el Planeta Rojo?", "o": ["Venus", "Marte", "Júpiter", "Saturno"], "c": "Marte"},
-        {"p": "¿Cuántos bits tiene un byte?", "o": ["4", "16", "32", "8"], "c": "8"},
-        {"p": "¿Quién pintó la Mona Lisa?", "o": ["Dali", "Picasso", "Da Vinci", "Van Gogh"], "c": "Da Vinci"},
-        {"p": "¿Cuál es el metal más caro del mundo?", "o": ["Oro", "Platino", "Rodio", "Cobre"], "c": "Rodio"},
-        {"p": "¿Qué animal es la mascota de Linux?", "o": ["Gato", "Pingüino", "Perro", "Elefante"], "c": "Pingüino"},
-        {"p": "¿En qué año llegó el hombre a la Luna?", "o": ["1965", "1972", "1969", "1980"], "c": "1969"},
-        {"p": "¿Cuál es el río más largo del mundo?", "o": ["Amazonas", "Nilo", "Orinoco", "Misisipi"], "c": "Amazonas"},
-        {"p": "¿Qué elemento químico tiene el símbolo 'O'?", "o": ["Oro", "Osmio", "Oxígeno", "Hierro"], "c": "Oxígeno"},
-        {"p": "¿Cuál es el lenguaje de programación de esta App?", "o": ["Java", "C++", "Python", "PHP"], "c": "Python"}
-    ]
+    st.session_state.pool_preguntas = st.session_state.pool_preguntas = 
+    [
+    {"p": "¿Qué significa la sigla RF en telecomunicaciones?",
+     "o": ["Radio Frecuencia", "Red Física", "Rango Final", "Registro de Fibra"],
+     "c": "Radio Frecuencia"},
+
+    {"p": "¿Qué dispositivo amplifica una señal en telecomunicaciones?",
+     "o": ["Router", "Amplificador", "Switch", "Modem"],
+     "c": "Amplificador"},
+
+    {"p": "¿Qué medio de transmisión usa luz para enviar datos?",
+     "o": ["Cable coaxial", "Par trenzado", "Fibra óptica", "Microondas"],
+     "c": "Fibra óptica"},
+
+    {"p": "¿Qué unidad se usa para medir frecuencia?",
+     "o": ["Voltios", "Hertz", "Ohmios", "Watts"],
+     "c": "Hertz"},
+
+    {"p": "¿Qué dispositivo convierte señales digitales a analógicas?",
+     "o": ["Switch", "Router", "Módem", "Antena"],
+     "c": "Módem"},
+
+    {"p": "¿Qué significa la sigla ISP?",
+     "o": ["Internet Service Provider", "Internal Signal Protocol", "Integrated System Port", "Internet Signal Process"],
+     "c": "Internet Service Provider"},
+
+    {"p": "¿Qué fenómeno puede afectar la calidad de una señal inalámbrica?",
+     "o": ["Interferencia", "Oxidación", "Gravedad", "Reflexión térmica"],
+     "c": "Interferencia"},
+
+    {"p": "¿Qué red cubre un área personal como Bluetooth?",
+     "o": ["LAN", "WAN", "PAN", "MAN"],
+     "c": "PAN"},
+
+    {"p": "¿Qué protocolo se usa para navegar en páginas web?",
+     "o": ["FTP", "HTTP", "SMTP", "SSH"],
+     "c": "HTTP"},
+
+    {"p": "¿Qué magnitud mide la potencia de una señal?",
+     "o": ["Decibelios", "Segundos", "Bits", "Metros"],
+     "c": "Decibelios"}
+]
     # Mezclamos el pool para que no siempre salgan igual
     random.shuffle(st.session_state.pool_preguntas)
 
@@ -36,7 +66,7 @@ def reproducir_sonido(url):
     st.markdown(f'<audio src="{url}" autoplay style="display:none"></audio>', unsafe_allow_html=True)
 
 # --- 4. INTERFAZ VISUAL ---
-st.title("💰 ¿Quién quiere ser Ingeniero TDA?")
+st.title("📡Aprendiendo de Telecomunicaciones📡")
 st.divider()
 
 if not st.session_state.juego_terminado:
@@ -89,14 +119,21 @@ if not st.session_state.juego_terminado:
 
 else:
     # PANTALLA FINAL
-    st.header("🏁 ¡Fin del Juego!")
+    st.header("🏁 ¡El juego ha terminado!")
     st.metric("PUNTUACIÓN FINAL", f"{st.session_state.puntos} / 10")
+    porcentaje = (st.session_state.puntos / 10) * 100
+    st.metric("PORCENTAJE OBTENIDO", f"{porcentaje}%")
     
-    if st.session_state.puntos >= 8:
-        st.balloons()
-        st.success("¡Eres un experto! Ya puedes trabajar en la cabecera de la TDA.")
-    else:
-        st.warning("Sigue estudiando, la norma ISDB-Tb te espera.")
+   if porcentaje >= 80:
+    st.balloons()
+    st.success("¡Excelente desempeño! 🌟 Nivel suficiente para ser ingeniero en Telecomunicaciones :) ")
+
+elif porcentaje >= 50:
+    st.snow()
+    st.info("Buen intento 📚 Sigue reforzando conceptos y llegarás más alto.")
+
+else:
+    st.error("Necesitas estudiar más 🔥 ¡Las telecomunicaciones te esperan!")
     
     if st.button("Reintentar"):
         # Limpiamos todo para empezar de nuevo
