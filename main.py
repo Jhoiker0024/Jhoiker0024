@@ -85,13 +85,13 @@ def reproducir_sonido(url):
     st.markdown(f'<audio src="{url}" autoplay style="display:none"></audio>', unsafe_allow_html=True)
 
 # --- 4. INTERFAZ VISUAL ---
-
+st.markdown("<br>", unsafe_allow_html=True)
 st.markdown(
     """
     <h1 style='text-align: center; 
                font-family: "Courier New", Courier, monospace;
                font-size: 48px;'>
-               st.markdown("<br>", unsafe_allow_html=True)
+              
         Aprendiendo Telecomunicaciones📡
     </h1>
     """,
