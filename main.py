@@ -119,7 +119,7 @@ st.divider()
 
 if not st.session_state.juego_terminado:
     # Barra de progreso (5 preguntas por ronda)
-    progreso = (st.session_state.indice + 1) / TOTAL_PREGUNTAS
+    progreso = (st.session_state.indice) / TOTAL_PREGUNTAS
     st.progress(progreso)
     # Obtenemos la pregunta actual del pool
     pregunta_actual = st.session_state.pool_preguntas[st.session_state.indice]
