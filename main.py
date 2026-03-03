@@ -91,7 +91,8 @@ st.markdown(
     <h1 style='text-align: center; 
                font-family: "Courier New", Courier, monospace;
                font-size: 48px;'>
-        📡 Aprendiendo Telecomunicaciones
+               st.markdown("<br>", unsafe_allow_html=True)
+        Aprendiendo Telecomunicaciones📡
     </h1>
     """,
     unsafe_allow_html=True
