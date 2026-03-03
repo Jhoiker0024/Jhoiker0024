@@ -4,7 +4,20 @@ import time
 
 # --- CONFIGURACIÓN DE LA PÁGINA ---
 st.set_page_config(page_title="Aprendiendo de Telecomunicaciones", page_icon="📡")
-
+# --- COLOCA IMAGEN DE FONDO ---
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-image: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # --- 1. BASE DE DATOS DE PRUEBA (El "Pool" de 10 preguntas) ---
 # Instrucción para el alumno: "Aquí es donde añades tus preguntas de TDA"
 if 'pool_preguntas' not in st.session_state:
@@ -136,7 +149,7 @@ else:
         st.info("Buen intento 📚 Sigue reforzando conceptos y llegarás más alto.")
 
     else:
-        st.error("Necesitas estudiar más 🔥 ¡Las telecomunicaciones te esperan!")
+        st.error("Necesitas estudiar más ☹️ ¡Las telecomunicaciones te esperan!")
     
     if st.button("Reintentar"):
         # Limpiamos todo para empezar de nuevo
