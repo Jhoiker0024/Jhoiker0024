@@ -11,9 +11,9 @@ st.markdown(
     .stApp {
         background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
         url("https://i.postimg.cc/VNHGhCyG/Chat-GPT-Image-2-mar-2026-10-36-51-p-m.png");
-        background-size: cover;
+        background-repeat: no-repeat;
         background-position: center;
-        background-attachment: fixed;
+        background-color: #0f172a;  /* Fondo azul oscuro moderno */
     }
     </style>
     """,
