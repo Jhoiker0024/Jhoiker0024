@@ -10,7 +10,7 @@ st.markdown(
     <style>
     .stApp {
         background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("https://drive.google.com/uc?export=view&id=1OKOn2U69T_U4eVVUgK_dXbgyt8EsLAl3");
+        url("https://i.postimg.cc/VNHGhCyG/Chat-GPT-Image-2-mar-2026-10-36-51-p-m.png");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
