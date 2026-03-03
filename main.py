@@ -125,15 +125,15 @@ else:
     st.metric("PORCENTAJE OBTENIDO", f"{porcentaje}%")
     
     if porcentaje >= 80:
-    st.balloons()
-    st.success("¡Excelente desempeño! 🌟 Nivel suficiente para ser ingeniero en Telecomunicaciones :) ")
+        st.balloons()
+        st.success("¡Excelente desempeño! 🌟 Nivel suficiente para ser ingeniero en Telecomunicaciones :) ")
 
     elif porcentaje >= 50:
-    st.snow()
-    st.info("Buen intento 📚 Sigue reforzando conceptos y llegarás más alto.")
+        st.snow()
+        st.info("Buen intento 📚 Sigue reforzando conceptos y llegarás más alto.")
 
     else:
-    st.error("Necesitas estudiar más 🔥 ¡Las telecomunicaciones te esperan!")
+        st.error("Necesitas estudiar más 🔥 ¡Las telecomunicaciones te esperan!")
     
     if st.button("Reintentar"):
         # Limpiamos todo para empezar de nuevo
